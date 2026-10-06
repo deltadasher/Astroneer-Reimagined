@@ -1,30 +1,23 @@
 # Build and verification status
 
-Recorded: 2026-10-06 UTC. This file describes this source foundation, not a release.
+Recorded 2026-10-06 UTC. Source checkpoint, not a playable release.
 
 | Stage | Status | Evidence / limit |
 | --- | --- | --- |
-| Provisional first-slice design | Written | `docs/design.md`; user approval pending |
-| Engine-independent content definitions | Written | `content/resonance.json`; not a kit import format |
-| Mission ordering/state reference | Implemented | `prototype/progression.py`; pure Python only |
-| Reference test suite | Passed | 15 tests, `python3 -m unittest discover -s tests -v` |
-| Independent reference review | Passed | Ordering, repeat-event idempotence, core catch-up, serialization reviewed; no game execution |
-| Installed game/Proton version | Unknown | User's local preflight required |
-| Kit API bindings and asset classes | Unimplemented | Inspect current kit; record actual supported types |
-| Resource, gas and recipe assets | Unimplemented | No inventory, crafting or gas behavior exists in game |
-| Site placement/interaction/visuals | Unimplemented | Fresh/existing save support unresolved |
-| Native mission/core integration | Unimplemented | Reference semantic events have no runtime producers |
-| Real save persistence/migration | Unimplemented | Reference JSON is not an Astroneer save format |
-| Unreal build/cook | Not run | No engine, project or licensed game assets used |
-| Mod package/integrator deployment | Not run | No installable output exists |
-| In-game / Linux-Proton tests | Not run | Requires legitimate game/toolchain and disposable save copies |
-| Repository destination | [Astroneer-Reimagined](https://github.com/deltadasher/Astroneer-Reimagined) | Source checkpoint; see repository commit history for published revisions |
+| Phase-one design and progression reference | Retained | `content/resonance.json`, `prototype/progression.py`; not runtime code |
+| Original source assets | Authored | Five FBXs, editable Blender source, eight named materials, builder and studio previews in `assets/resonance/` |
+| Independent mesh inspection | Passed | Five Blender round-trips; identity scale, shared pivots, UVs/materials, closed positive-volume components, no nonmanifold or degenerate faces |
+| UE editor authoring source | Written, not executed | Imports meshes/materials, creates item Blueprint definitions/recipe links, site visual shell and six mission rows |
+| Offline tests and Python compilation | Passed | 32 tests; input/static/reference checks and synthetic staging fixtures only |
+| Generated Unreal assets | Not generated | No `.uasset`; editor reflection, Blueprint compile and reopen checks pending |
+| Inventory/catalog/slot behavior | Unimplemented/unverified | Definition authoring is not functional registration; icons, body slots and real fit pending |
+| Gas and production loop | Unimplemented | Unbound descriptor only; container units, production and recipe station pending |
+| Site gameplay and world persistence | Unimplemented | Visual base shell only; state components, placement, interaction, save/load, authority and migration pending |
+| Mission/core integration | Unimplemented | Data rows/custom tags only; event producers, activation and authoritative state reconciliation pending |
+| Windows cook and loader package | Not run | No installable `.pak` or automatic runtime metadata emitted |
+| Astroneer / Linux-Proton / multiplayer | Not run | Actual versions, rendering, save safety and compatibility unknown |
 
-The suite covers new saves; progress before awakening; a core awakened before or
-at each intermediate mission; repeat and out-of-order events; save/reload at each
-step; unsupported/corrupt reference state; mission/recipe references; and lens-free,
-repeatable sample availability in the design data. These assertions do not prove
-resource reachability, inventory behavior, or persistence in the actual game.
-
-The next useful milestone is a verified runtime probe and one real resource loop,
-not a zip of this reference presented as a playable mod.
+Follow `unreal-authoring.md` for source generation, `source-validation.md` for
+independent evidence, `staging.md` for the bounded staging helper, and
+`local-agent-handoff.md` for the remaining runtime acceptance checks. A source
+suite pass is not an editor, cook, game or save-compatibility pass.

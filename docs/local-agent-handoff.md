@@ -4,8 +4,11 @@
 Build a genuine Astroneer content expansion from this provisional foundation,
 starting with one playable Sylva loop. The user has Steam PC on Linux/Proton and
 no current mods. No DLC is assumed. Check with the user before treating the names,
-economy, or broader progression overhaul as approved. This repository has **no
-Unreal implementation**; packaging these Python/JSON files does not create a mod.
+economy, or broader progression overhaul as approved. This repository now has original mesh sources and **unexecuted UE editor-authoring code**.
+It has no generated Unreal assets or gameplay event graphs; packaging the source
+files does not create a mod. Begin with `unreal-authoring.md`: run the generator in
+the pinned Windows editor, compile/reopen/verify its assets, then implement the
+bounded missing runtime work.
 
 Read applicable repository/local `AGENTS.md` and relevant `.agents/skills` first.
 Do not copy proprietary game assets into the repository, commit saves, add secrets,
@@ -37,7 +40,7 @@ Keep diagnostic output free of personal paths and sensitive data in shared repor
 
 Prove, in sequence: one new resource and inventory round-trip; gas storage and recipe
 consumption; one non-destructive site interaction; core-state query on load; one
-mission update and durable saved state. Only then author visuals and the full arc.
+mission update and durable saved state. Use the supplied original visuals after editor import/scale validation; wire the full arc only after these narrow probes succeed.
 Choose an existing-world placement strategy explicitly. If the runtime cannot support
 an element, report the precise gap and propose a scoped alternative rather than a
 fake implementation.
