@@ -1,0 +1,377 @@
+{
+  "SM_TuningLens": {
+    "object": "SM_TuningLens",
+    "world_dimensions_cm": [
+      26.300000190734863,
+      19.399999618530273,
+      35.599998474121094
+    ],
+    "expected_dimensions_cm": [
+      26.3,
+      19.4,
+      35.6
+    ],
+    "world_bounds_min_cm": [
+      -11.600000381469727,
+      -9.699999809265137,
+      0.0
+    ],
+    "world_bounds_max_cm": [
+      14.699999809265137,
+      9.699999809265137,
+      35.599998474121094
+    ],
+    "origin_cm": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "scale": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "triangles": 1144,
+    "vertices": 608,
+    "non_manifold_edges": 0,
+    "zero_area_faces": 0,
+    "uv_layers": [
+      "UVMap"
+    ],
+    "material_slots": [
+      "M_Shell",
+      "M_Seam",
+      "M_Signal",
+      "M_Control",
+      "M_Echo",
+      "M_Stone",
+      "M_StoneLight",
+      "M_EchoLight"
+    ],
+    "material_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      7
+    ],
+    "collision_objects": [
+      "UCX_SM_TuningLens_00",
+      "UCX_SM_TuningLens_01"
+    ],
+    "connected_component_signed_volumes_cm3": [
+      1186.1655391057334,
+      120.22381663322452,
+      6.360730489095062,
+      519.8399804433186,
+      564.5399379730226,
+      1719.6666666666672,
+      1239.3333333333333,
+      503.3033706347148,
+      503.3033394813538,
+      186.6240719159444,
+      4.675819655259449,
+      4.675890127817792,
+      4.675826231638591,
+      146.01607076168156,
+      9.407974958419802,
+      109.75805536905926,
+      49.09063040415398,
+      49.090700054168956,
+      5.13084610303243,
+      5.130873839060463,
+      5.130861759185787
+    ]
+  },
+  "SM_EchoGlass": {
+    "object": "SM_EchoGlass",
+    "world_dimensions_cm": [
+      17.87564182281494,
+      19.0,
+      23.0
+    ],
+    "expected_dimensions_cm": [
+      17.876,
+      19.0,
+      23.0
+    ],
+    "world_bounds_min_cm": [
+      -8.227241516113281,
+      -9.5,
+      0.0
+    ],
+    "world_bounds_max_cm": [
+      9.64840030670166,
+      9.5,
+      23.0
+    ],
+    "origin_cm": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "scale": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "triangles": 262,
+    "vertices": 147,
+    "non_manifold_edges": 0,
+    "zero_area_faces": 0,
+    "uv_layers": [
+      "UVMap"
+    ],
+    "material_slots": [
+      "M_Shell",
+      "M_Seam",
+      "M_Signal",
+      "M_Control",
+      "M_Echo",
+      "M_Stone",
+      "M_StoneLight",
+      "M_EchoLight"
+    ],
+    "material_indices": [
+      0,
+      1,
+      2,
+      4,
+      7
+    ],
+    "collision_objects": [
+      "UCX_SM_EchoGlass_00"
+    ],
+    "connected_component_signed_volumes_cm3": [
+      211.51018526156741,
+      144.08674603700638,
+      715.5102068583168,
+      468.95279184977215,
+      35.8666650056839,
+      35.86666593079766,
+      35.8666527469953,
+      1727.3993625005087
+    ]
+  },
+  "SM_ResonanceSite_Base": {
+    "object": "SM_ResonanceSite_Base",
+    "world_dimensions_cm": [
+      83.81047439575195,
+      82.04932022094727,
+      23.507442951202393
+    ],
+    "expected_dimensions_cm": [
+      83.81,
+      82.049,
+      23.507
+    ],
+    "world_bounds_min_cm": [
+      -41.03272247314453,
+      -40.30983352661133,
+      -2.107443332672119
+    ],
+    "world_bounds_max_cm": [
+      42.77775192260742,
+      41.73948669433594,
+      21.399999618530273
+    ],
+    "origin_cm": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "scale": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "triangles": 904,
+    "vertices": 482,
+    "non_manifold_edges": 0,
+    "zero_area_faces": 0,
+    "uv_layers": [
+      "UVMap"
+    ],
+    "material_slots": [
+      "M_Shell",
+      "M_Seam",
+      "M_Signal",
+      "M_Control",
+      "M_Echo",
+      "M_Stone",
+      "M_StoneLight",
+      "M_EchoLight"
+    ],
+    "material_indices": [
+      0,
+      1,
+      3,
+      5,
+      6
+    ],
+    "collision_objects": [
+      "UCX_SM_ResonanceSite_Base_00"
+    ],
+    "connected_component_signed_volumes_cm3": [
+      1439.999908447265,
+      29.95193831125895,
+      29.952204386393213,
+      29.950220743815088,
+      8450.228223164877,
+      7758.615030765533,
+      6560.033126960198,
+      8256.267599985003,
+      8195.816400884583,
+      8956.511219660442,
+      1982.6666428248088,
+      136.124153137207,
+      6201.487093289695,
+      7808.282839934031,
+      44537.46564102173,
+      1982.6665115356443,
+      1982.6666666666667,
+      136.1242014567059,
+      136.125057220459,
+      6600.000813802082
+    ]
+  },
+  "SM_ResonanceSite_Dormant": {
+    "object": "SM_ResonanceSite_Dormant",
+    "world_dimensions_cm": [
+      46.8371696472168,
+      40.56217956542969,
+      54.0
+    ],
+    "expected_dimensions_cm": [
+      46.837,
+      40.562,
+      54.0
+    ],
+    "world_bounds_min_cm": [
+      -23.4185848236084,
+      -17.562179565429688,
+      19.0
+    ],
+    "world_bounds_max_cm": [
+      23.4185848236084,
+      23.0,
+      73.0
+    ],
+    "origin_cm": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "scale": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "triangles": 172,
+    "vertices": 102,
+    "non_manifold_edges": 0,
+    "zero_area_faces": 0,
+    "uv_layers": [
+      "UVMap"
+    ],
+    "material_slots": [
+      "M_Shell",
+      "M_Seam",
+      "M_Signal",
+      "M_Control",
+      "M_Echo",
+      "M_Stone",
+      "M_StoneLight",
+      "M_EchoLight"
+    ],
+    "material_indices": [
+      1,
+      3,
+      5,
+      6
+    ],
+    "collision_objects": [],
+    "connected_component_signed_volumes_cm3": [
+      31.176912943522144,
+      31.177024841308594,
+      31.17684300740558,
+      6692.999999999999,
+      4882.61478296916,
+      6692.99983183543,
+      592.3613840738935,
+      6693.000417073567
+    ]
+  },
+  "SM_ResonanceSite_Active": {
+    "object": "SM_ResonanceSite_Active",
+    "world_dimensions_cm": [
+      73.28203582763672,
+      63.46410369873047,
+      54.0
+    ],
+    "expected_dimensions_cm": [
+      73.282,
+      63.464,
+      54.0
+    ],
+    "world_bounds_min_cm": [
+      -36.64101791381836,
+      -23.46410369873047,
+      19.0
+    ],
+    "world_bounds_max_cm": [
+      36.64101791381836,
+      40.0,
+      73.0
+    ],
+    "origin_cm": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "scale": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "triangles": 402,
+    "vertices": 217,
+    "non_manifold_edges": 0,
+    "zero_area_faces": 0,
+    "uv_layers": [
+      "UVMap"
+    ],
+    "material_slots": [
+      "M_Shell",
+      "M_Seam",
+      "M_Signal",
+      "M_Control",
+      "M_Echo",
+      "M_Stone",
+      "M_StoneLight",
+      "M_EchoLight"
+    ],
+    "material_indices": [
+      1,
+      2,
+      4,
+      5,
+      6,
+      7
+    ],
+    "collision_objects": [],
+    "connected_component_signed_volumes_cm3": [
+      4882.614782969156,
+      4838.0,
+      415.1070486704508,
+      4838.00013478597,
+      415.10715103149414,
+      4837.997881571451,
+      415.1079057057699,
+      5128.216803232831,
+      485.99956258137985,
+      263.99974060058605
+    ]
+  }
+}

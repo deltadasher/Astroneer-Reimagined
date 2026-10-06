@@ -1,0 +1,19 @@
+{
+  "exports/SM_ResonanceSite_Dormant.fbx": "f1e5cbfa3ec2a58b9673d461642970e9ea78b20e2346928973fde4735dd7d070",
+  "exports/SM_TuningLens.fbx": "3e7675067955fb532c543096cd6423a413a23da1a7cb858ecda9c1d16c39c382",
+  "exports/SM_EchoGlass.fbx": "6e2e902990737dd0963e37dc6f8feb3a5e10f28205a8cf2a555c06d8617366b4",
+  "exports/SM_ResonanceSite_Active.fbx": "5b1de257e170953bbda03d87c526b91530017a9b803b9f5cb752a5ce4ea3b688",
+  "exports/SM_ResonanceSite_Base.fbx": "cd8a468f854d6b22abf9e1d899f885a1d38aed5430c7c0f46ca9a8c6c9e88d5b",
+  "source/ResonanceAssets.blend": "7695fd49bb01380195fbd4faaae5b2bbda3941f92fa41b3a8a4680185517263a",
+  "source/make_contact_sheet.py": "8e51610e51258e4c003cc13ef369446e273596112e7215e7871e6c9d5febed67",
+  "source/build_models.py": "cd3d4750fd5876ea2e80275af575ae5b9e18621997974ec8665b5c5c9d88811e",
+  "renders/03_SiteDormant.png": "6b7d9a1cc13736bb7787570225e865095b721d4a5048ff345809e5fee428e173",
+  "renders/04_SiteActive.png": "e8e0280f436e1055d288bc3e9adca9897970f8dca02b662c2750b91a6a61c351",
+  "renders/05_TuningLensRear.png": "8545999e819912b12a77a0e2db95243f9acd23d5dbdd8c3a42fc48cda8701a30",
+  "renders/02_EchoGlass.png": "24f065151dc680f88dd2005307b723ab06814a0614283846dbd477bbcf8906c6",
+  "renders/01_TuningLens.png": "7ce8eaa8cd2596220951e558c9f1e2757c57b7f9af46e74ef3c71b4b2562306b",
+  "renders/Resonance_ContactSheet.png": "9849ab0bae440af85446e6e18721141230d91c7709c6d5d2c7b8401acf9c98f1",
+  "README.md": "bcffe073515fc733a45c06e6b9b34447d75364d41a52b0d3b18280fd3599add0",
+  "asset_manifest.json": "a5f626331711ca68829ce90e4cbb617d4ab22928417dcec20168a6fa76872f31",
+  "independent_mesh_review.json": "45cf588663424f4056d3a8119dc05191858f31e76ccf7532bb9e1fd7329f9dba"
+}

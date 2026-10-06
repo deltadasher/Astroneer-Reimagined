@@ -7,3 +7,7 @@ Intermediate/
 DerivedDataCache/
 *.pak
 *.sav
+
+# Local asset backups and non-redistributable visual references
+*.blend1
+assets/**/reference/

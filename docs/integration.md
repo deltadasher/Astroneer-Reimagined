@@ -3,7 +3,7 @@
 Evidence reviewed 2026-10-06 UTC. Astroneer modding is community-supported, not an
 official game SDK: [community documentation](https://astroneermodding.readthedocs.io/en/latest/).
 Documented facilities establish a direction, **not working support for this mod**.
-Every runtime row below remains unimplemented and untested here.
+Runtime behavior remains unimplemented and untested here. Source-side editor authoring now exists; see `unreal-authoring.md` and `source-validation.md` for the pinned kit/API review and exact current boundary. Item definitions, recipe links, original materials and mission rows are authored in code but have not been generated in Unreal.
 
 ## Compatibility gates
 - Kit README names Astroneer **1.36.42.0 (MEGATECH)** as its last update target:
@@ -48,10 +48,11 @@ item grants are idempotent. Other planets' core changes must never trigger this 
 
 ## Evidence quality
 These links are maintainer documentation, reviewed as a feasibility starting point.
-Relevant SDK source locations are linked for implementation inspection. No source
-commit is pinned, no game assets were inspected, and no runtime binary was
-executed. The implementing agent must pin the selected kit/tool releases, inspect
-actual current declarations, and update this matrix with runtime evidence.
+Relevant SDK source locations are linked for implementation inspection. The authoring source pins ModdingKit commit
+`e7f4d47eb368f72887dc32100600ba8ab3072184`; selected reflected headers and
+Epic 4.27 editor APIs were reviewed. No proprietary game assets or runtime binary
+were executed. The implementing agent must verify the installed game/tool versions
+and update this matrix with real editor and runtime evidence.
 
 ## Additional implementation references
 - [Mission objective types](https://github.com/AstroTechies/ModdingKit/blob/master/Source/Astro/Public/EAstroMissionObjectiveType.h)
