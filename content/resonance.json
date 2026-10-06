@@ -1,0 +1,137 @@
+{
+  "schema_version": 1,
+  "format": "design_reference_not_moddingkit_import",
+  "status": "provisional_unimplemented",
+  "id": "resonance",
+  "requires_dlc": false,
+  "scope": {
+    "planet": "sylva",
+    "site_count": 1,
+    "world_placement": "runtime_strategy_unresolved"
+  },
+  "resources": [
+    {
+      "id": "resonant_vapour",
+      "name": "Resonant Vapour",
+      "kind": "gas",
+      "source": "restorable_site_experiment",
+      "before_core": "manual_sample_after_discovery",
+      "after_core": "same_gas_higher_site_yield_after_retuning",
+      "notes": "Gas storage, transfer and production integration remain unimplemented; no planet atmosphere override in first slice."
+    },
+    {
+      "id": "echo_glass",
+      "name": "Echo Glass",
+      "kind": "solid_material",
+      "recipe": {
+        "station": "unresolved_verify_crafting_api",
+        "inputs": [
+          {
+            "resource": "quartz",
+            "amount": 1,
+            "unit": "solid_nugget"
+          },
+          {
+            "resource": "resonant_vapour",
+            "amount": 1,
+            "unit": "gas_recipe_unit_pending_runtime_mapping"
+          }
+        ],
+        "outputs": [
+          {
+            "resource": "echo_glass",
+            "amount": 1,
+            "unit": "solid_nugget"
+          }
+        ]
+      },
+      "notes": "Provisional balance; gas unit must be mapped to the game's real container/recipe consumption before implementation."
+    }
+  ],
+  "equipment": [
+    {
+      "id": "tuning_lens",
+      "name": "Tuning Lens",
+      "consumable": false,
+      "recipe": {
+        "inputs": [
+          {
+            "resource": "echo_glass",
+            "amount": 1,
+            "unit": "solid_nugget"
+          }
+        ]
+      },
+      "behavior": "used_for_restoration_and_retuning",
+      "recipe_station": "unresolved"
+    }
+  ],
+  "site_modes": {
+    "dormant": "Discovery and manual experiment sampling are available before or after core awakening.",
+    "restored": "Experiments remain available. Core awakening enables the retuning objective.",
+    "retuned": "Proposed higher gas yield and a local exploration clue; numeric balance and reward pending."
+  },
+  "missions": [
+    {
+      "id": "discover",
+      "title": "A Quiet Signal",
+      "requires": [],
+      "event": "site_discovered"
+    },
+    {
+      "id": "experiment",
+      "title": "First Resonance",
+      "requires": [
+        "discover"
+      ],
+      "event": "sample_experiment_completed"
+    },
+    {
+      "id": "craft",
+      "title": "A Lens for the Signal",
+      "requires": [
+        "experiment"
+      ],
+      "event": "tuning_lens_crafted"
+    },
+    {
+      "id": "restore",
+      "title": "Restore the Array",
+      "requires": [
+        "craft"
+      ],
+      "event": "site_restored"
+    },
+    {
+      "id": "awaken",
+      "title": "The Planet Answers",
+      "requires": [
+        "restore"
+      ],
+      "condition": "sylva_core_awakened"
+    },
+    {
+      "id": "retune",
+      "title": "Beyond the First Signal",
+      "requires": [
+        "awaken"
+      ],
+      "event": "site_retuned"
+    }
+  ],
+  "rewards": {
+    "status": "not_implemented",
+    "policy": "first_slice_uses_capability_unlocks_only_no_repeatable_mission_item_rewards"
+  },
+  "runtime_bindings": null,
+  "sampling": {
+    "repeatable": true,
+    "requires_discovery": true,
+    "requires_lens": false,
+    "requires_core_awakened": false,
+    "available_after_core_awakened": true,
+    "cost": "no_resource_inputs_initial_slice",
+    "rate_and_power": "pending_balance",
+    "notes": "Must remain available after restoration and retuning, including for replacement lenses."
+  }
+}

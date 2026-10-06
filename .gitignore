@@ -1,0 +1,9 @@
+__pycache__/
+*.py[cod]
+.venv/
+# Do not redistribute game data or generated Unreal outputs.
+Saved/
+Intermediate/
+DerivedDataCache/
+*.pak
+*.sav
