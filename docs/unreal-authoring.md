@@ -47,13 +47,13 @@ roll back content. Do not run while PIE is active.
 3. Place this repository anywhere, with the five supplied models under `assets/`
    retaining their `SM_*.fbx` names. There must be exactly one of each and one `asset_manifest.json`. Do not
    substitute the concept PNGs or a third-party/base-game mesh
-4. Open Unreal's Python console and run (adjust the source path):
+4. In Project Settings → Plugins → Python → Additional Paths, select the
+   checkout's `authoring` directory. Restart the editor. Run the following in
+   Unreal's Python console. The builder locates the assets beside the module.
 
    ```python
-   import sys
-   sys.path.insert(0, r'C:/src/Astroneer-Reimagined/authoring')
    import build_resonance
-   build_resonance.build(r'C:/src/Astroneer-Reimagined')
+   build_resonance.build()
    ```
 
 5. Inspect the resulting assets, compile each generated Blueprint in its editor,

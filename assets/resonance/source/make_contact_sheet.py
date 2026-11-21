@@ -2,9 +2,11 @@
 from PIL import Image,ImageDraw,ImageFont
 from pathlib import Path
 root=Path(__file__).resolve().parents[1]
-font='/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf'
-bold='/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf'
-f=lambda s,b=False:ImageFont.truetype(bold if b else font,s)
+def f(size, bold=False):
+    try:
+        return ImageFont.truetype('DejaVuSans-Bold.ttf' if bold else 'DejaVuSans.ttf', size)
+    except OSError:
+        return ImageFont.load_default(size=size)
 im=Image.new('RGB',(1800,2130),'#10212c');d=ImageDraw.Draw(im)
 d.text((70,48),'RESONANCE',font=f(56,True),fill='#e7f0e8')
 d.text((73,123),'Original low-poly assets  /  Astroneer Reimagined',font=f(26),fill='#78d2cd')

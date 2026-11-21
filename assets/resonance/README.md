@@ -12,6 +12,10 @@ Original meshes for the **Astroneer Reimagined** first-slice prototype. This is 
 
 Rebuild using `blender -b --python source/build_models.py -- --render`. Omit `-- --render` to export geometry only. No external assets or Python packages are required by the builder. Render camera, floor and lights are added **after** saving the clean source and are never exported.
 
+To rebuild the contact sheet, run `python3 source/make_contact_sheet.py` from
+this folder with Pillow 10.1 or newer. It uses DejaVu Sans when available and
+the font bundled with Pillow otherwise.
+
 ## Design and interaction
 
 **Tuning Lens:** a compact white protective shell, dark inner optical housing, mint solid lens, orange calibration wheel and orange rear grip. The flat low heel suggests slot attachment. The wheel and grip are physical affordances; actual interactions require Blueprint logic.

@@ -10,6 +10,7 @@ for p in ('exports','renders'): (ROOT/p).mkdir(exist_ok=True)
 bpy.ops.object.select_all(action='SELECT'); bpy.ops.object.delete(use_global=False)
 for m in list(bpy.data.materials): bpy.data.materials.remove(m)
 scene=bpy.context.scene
+scene.render.use_stamp_filename=False
 scene.unit_settings.system='METRIC'; scene.unit_settings.scale_length=.01
 PALETTE=[('M_Shell',(0.79,.84,.82,1)),('M_Seam',(.028,.052,.072,1)),('M_Signal',(.055,.64,.64,1)),('M_Control',(.97,.29,.065,1)),('M_Echo',(.29,.85,.71,1)),('M_Stone',(.115,.20,.23,1)),('M_StoneLight',(.21,.33,.35,1)),('M_EchoLight',(.67,.96,.82,1))]
 M=[]

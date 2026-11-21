@@ -1,8 +1,9 @@
 """UE 4.27.2 editor-only asset authoring. Not a runtime mod or Python gameplay.
 
 Run from the Unreal Python console:
-  import sys; sys.path.insert(0, r'C:/src/Astroneer-Reimagined/authoring')
-  import build_resonance; build_resonance.build(r'C:/src/Astroneer-Reimagined')
+  Add this repository's authoring directory to Unreal's Python Additional Paths.
+  import build_resonance
+  build_resonance.build()
 
 Requires the pinned ModdingKit, Python Editor Script Plugin and Editor Scripting
 Utilities. Creates NEW assets only; refuses to overwrite any existing mod asset.
@@ -169,9 +170,9 @@ def author_missions(ue, tools, design):
     return asset
 
 
-def build(repo_directory):
+def build(repo_directory=None):
     import unreal as ue
-    repo = Path(repo_directory).resolve()
+    repo = Path(__file__).resolve().parents[1] if repo_directory is None else Path(repo_directory).resolve()
     design, files = read_inputs(repo)
     material_entries = read_materials(repo)
     version = ue.SystemLibrary.get_engine_version()
